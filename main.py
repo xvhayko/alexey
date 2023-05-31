@@ -1,11 +1,14 @@
-a=int(input("введите трёх значное число"))
-if 99<a and 1000>a:
-    a1=a//100
-    a2=a//10%10
-    a3=a%10
-    b=a3*100+a2*10+a1
-    if a==b:
-        print("данное число палинром")
-    else:
-        print("данное число не палинром")
-    
+a = int(input("Введите номер месяца (1-12): "))
+def season(num):
+   if num == 12 or 1 <= num <= 2:
+       print("Зима")
+   elif  3 <= num <= 5:
+       print("Весна")
+   elif 6 <= num <= 8:
+       print("Лето")
+   elif 9 <= num <= 11:
+       print("Осень")
+   else:
+       print("Неверно введён номер месяца!")
+
+season(a)
