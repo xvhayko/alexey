@@ -1,9 +1,7 @@
-a = float(input("Первая скорость км/ч"))
-b = float(input("Вторая скорость м/с"))
-c = a * 3.6
-if c < b:
-    print('первая меньше')
-elif c == b:
-    print('равны')
-else:
-    print('первая больше')
+def bank(a,time):
+    for each_year in range(time):
+        a = (a * 1.1)
+    return a
+a=float(input("количество вкладываемых денег"))
+time=int(input("На сколько лет?"))
+print(bank (a, time))
