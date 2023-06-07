@@ -1,8 +1,2 @@
-a, b = float(input()), float(input())
-if a > b:
-    print('максимальное значение', a, "минимальное значение", b)
-elif a == b:
-    print('значения равны')
-else:
-    print('максимальное значение', b, "минимальное значение", a)
-    
+for i in range(1, 20):
+    print(i, "сm = ",i * 2.54, "inch")
