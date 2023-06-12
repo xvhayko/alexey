@@ -1,9 +1,8 @@
-a = int(input())
-b = int(input())
-if a < b:
-    while True:
-        a += 1
-        if a == b:
-            break
-        else:
-            print(a)
+a = 0
+for i in range(1, 601):
+    if i % 28 == 0 and i > a:
+       a = i
+if a == 0:
+    print("Нет числа, которое нацело делится на 28 и не превосходит 600")
+else:
+    print("Максимальное число, которое нацело делится на 28 и не превосходит 600:", a)
