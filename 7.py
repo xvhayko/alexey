@@ -1,2 +1,2 @@
-for i in range(1, 10):
-    print(i * 2-1)
+def odd_or_even(arr):
+    return "odd" if sum(arr) % 2 != 0 else "even"
